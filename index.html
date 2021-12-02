@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meninas In Tech</title>
+        <link rel="stylesheet" href="style.css">
+        <link href=link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+
+    <header>
+        <div class="container">
+            <h1 id="title" class="text center">Meninas In Tech</h1>
+            <p id="description" class="description text">
+                Thank you for talking the time to help us improve the platform
+            </p>
+    </header>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control"
+                 placeholder="Enter your name" required/>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="10" max= "99"
+                     class="form-control" placeholder="Age"/>
+             </div>
+             <div class="form-group">
+                 <p>Which option best describes your current role? </p>
+                 <select id="dropdown" name ="role" class="form-control" required>
+                     <option value="student">Student</option>
+                     <option value="job">Job</option>
+                     <option value="learner">Learner</option>
+                     <option value="preferNo">Prefer not to say</option>
+                     <option value="other">Other</option>
+                 </select>
+             </div>
+
+             <div class="form-group">
+                 <p>Would you recommend Meninas In Tech to a friend?</p>
+                 <label><input  name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+                 <label><input  name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+                 <label><input  name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+             </div>
+
+             <div class="form-group">
+                 <p>What is your faborite feature of Meninas In Tech?</p>
+                 <select id="most-like" name="mostLike" class="form-control" required>
+                     <option disabled selected  value>Selection an option</option>
+                     <option value="emotionalEmpowerment">Emotional Empowerment</option>
+                     <option value="technologyAndProgrammingTraining">Technology and programming training</option>
+                     <option value="mentoring">Mentoring</option>
+                 </select>
+             </div>
+            
+             <div class="form-group">
+                 <p>What other programming language would you like to learn? <span class="clue">(Check all that apply)</span></p>
+                 <label><input name="prefer" value="java" type="checkbox" class="input-checkbox" />Java</label>
+                 <label><input name="prefer" value="javaScript" type="checkbox" class="input-checkbox" />JavaScript</label>
+                 <label><input name="prefer" value="kotlin" type="checkbox" class="input-checkbox" />Kotlin</label>
+                 <label><input name="prefer" value="php" type="checkbox" class="input-checkbox" />PHP</label>
+                 <label><input name="prefer" value="python" type="checkbox" class="input-checkbox" />Python</label>
+                 <label><input name="prefer" value="swift" type="checkbox" class="input-checkbox" />Swift</label>
+             </div>
+        </form>
+</html>
